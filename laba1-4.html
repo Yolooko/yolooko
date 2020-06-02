@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lr1-4</title>
+</head>
+<body>
+    <form name="f1" method="POST" action="mailto:gyntera@gmail.com">
+      <fieldset>
+          <legend>Анкета лучшего спортсмена</legend>
+        ФИО: <br />
+        <input name="name" type="text" size="25" required="required" maxlength="40" placeholder="Иванов Иван" required pattern="^[a-zA-ZА-Яа-я]+$" /> <br />
+        Дата рождения: <br />
+        <input name="day" type="text" size="5" maxlength="2" required="required" placeholder="День" required pattern="[0-9]{2}" />
+        <select name="month">
+            <option value="jan">Январь</option>
+            <option value="feb">Февраль</option>
+            <option value="mar">Март</option>
+            <option value="apr">Апрель</option>
+            <option value="may">Май</option>
+            <option value="jun">Июнь</option>
+            <option value="jul">Июль</option>
+            <option value="aug">Август</option>
+            <option value="sep">Сентябрь</option>
+            <option value="oct">Октябрь</option>
+            <option value="nov">Ноябрь</option>
+            <option value="dec">Декабрь</option>
+        </select>
+        <input name="year" type="text" size="5" maxlength="4" minlength="4" required="required" placeholder="Год" required pattern="[0-9]{4}" /> <br>
+        Номер телефона (должен начинаться с 8): <br>
+        <input name="number" type="text" size="15" maxlength="11" required="required" placeholder="89999999999"required pattern="8[0-9]{10}" /><br><br>
+        Ваш рост, м (в качестве разделителя необходимо использовать запятую): <br>
+        <input name="height" type="text" size="5" maxlength="4" minlength="4" required="required" placeholder="1,80" required pattern="\d+(,\d{2})?" /> <br>
+        Ваш вес, кг: <br>
+        <input name="width" type="text" size="5" maxlength="3" minlength="2" required="required" placeholder="75" required pattern="[0-9]+$" /> <br> <br><br>
+        Страна рождения: <br>
+        <input name="born" type="text" size="25" required="required" maxlength="40"  required pattern="^[a-zA-ZА-Яа-я]+$" /> <br />
+        Гражданство: <br>
+        <input name="country" type="text" size="25" required="required" maxlength="40" required pattern="^[a-zA-ZА-Яа-я]+$" /> <br /><br>
+        Каким видом спорта занимаетесь: <br>
+        <select name="sports">
+            <option value="basketball">Баскетбол</option>
+            <option value="volleyball ">Волейбол</option>
+            <option value="football">Футбол</option>
+            <option value="baseball">Бейсбол</option>
+            <option value="cricket">Крикет</option>
+            <option value="high jump">Прыжки в высоту</option>
+            <option value="hurdle race">Бег с препятствиями</option>
+            <option value="horseback riding">Верховая езда</option>
+            <option value="rowing">Гребля</option>
+            <option value="ice hockey">Хоккей на льду</option>
+            <option value="field hockey">Хоккей на траве</option>
+            <option value="sprint">Спринт</option>
+            <option value="biathlon">Биатлон</option>
+            <option value="swimming">Плаванье</option>
+        </select> <br><br>
+        Являетесь ли членом какой-либо команды? (Если да, укажите название команды) <br>
+        <input type="radio" name="team" value="y" /> Да
+        <input type="radio" name="team" value="n" /> Нет <br>
+        <input name="teamname" type="text" size="25"  maxlength="40" placeholder="Название команды (по желанию)" required pattern="^[a-zA-ZА-Яа-я0-9]+$" /> <br /><br>
+        Расскажите о своих победах или достижениях: <br>       
+        <textarea name="comment"  cols="60" rows="15"> </textarea> <br> <br>
+    </fieldset>
+    <input type="submit" name="enter" value="Send" />
+    <input type="reset" value="Reset" />
+        </form>
+
+</body>
